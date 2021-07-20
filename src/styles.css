@@ -1,0 +1,21 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+.fs-54{
+    font-size: 54;
+}
+
+.fs-18{
+    font-size: 18;
+}
+
+.font-fam {
+    font-family: 'Poppins';
+}
+
+.form-style {
+    border-radius: 10px;
+    
+}
