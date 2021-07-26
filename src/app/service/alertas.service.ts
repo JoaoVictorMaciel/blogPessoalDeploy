@@ -1,3 +1,4 @@
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 import { Injectable } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal'
 import { AlertasComponent } from '../alertas/alertas.component';
@@ -11,9 +12,23 @@ export class AlertasService {
     private bsModalService: BsModalService
   ) { }
 
-  private showAlert(msg: string, tipo: String){
+  private showAlert(message: string, tipo: String){
   const bsModalRef: BsModalRef = this.bsModalService.show(AlertasComponent)
   bsModalRef.content.type = tipo
-  bsModalRef.content.message = msg
+  bsModalRef.content.message = message
   }
+
+  showAlertDanger(message: string){
+    this.showAlert(message, 'danger')
+  }
+
+  showAlertSuccess(message: string){
+    this.showAlert(message, 'success')
+  }
+
+  showAlertInfo(message: string){
+    this.showAlert(message, 'info')
+  }
+
+
 }
