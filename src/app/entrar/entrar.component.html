@@ -8,19 +8,19 @@
                 <div class="col-md-6">
                     <h1 class="text-center mb-3">Entrar</h1>
                     
-                    <div class="form-group form-style white">
+                    <div class="form-group form-style white radius">
                         <label for="usuario white">Usuário</label>
-                        <input [(ngModel)]='userLogin.usuario' class="form-control radius" type="text" id="usuario"
+                        <input [(ngModel)]='userLogin.usuario' class="form-control" type="text" id="usuario"
                         placeholder="Seu usuário">
                     </div>
 
-                    <div class="form-group white">
+                    <div class="form-group white radius">
                         <label for="senha ">Senha</label>
-                        <input [(ngModel)]='userLogin.senha' class="form-control radius" type="password" id="senha"
+                        <input [(ngModel)]='userLogin.senha' class="form-control " type="password" id="senha"
                         placeholder="Sua senha">
                     </div>
 
-                    <div class="d-flex justify-content-center btn-transit">
+                    <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-config form-style" (click)='entrar()'>Entrar</button>
                     </div>
 

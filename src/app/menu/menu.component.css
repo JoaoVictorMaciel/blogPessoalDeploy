@@ -1,3 +1,24 @@
 .fs-16 {
     font-size: 16pt;
 }
+
+.back{
+    background-color: #171717;
+}
+
+.scale{
+    transition: 0.4s;
+}
+
+.scale:hover{
+    transform: scale(1.2);
+}
+
+.opacity{
+    transition: 0.4s;
+}
+
+.opacity:hover{
+    opacity: 0.8;
+}
+
