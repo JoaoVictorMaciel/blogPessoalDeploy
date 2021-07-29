@@ -23,3 +23,7 @@ html
 .pointer {
     cursor: pointer;
 }
+
+.back-index {
+    background-color: #171717;
+}
