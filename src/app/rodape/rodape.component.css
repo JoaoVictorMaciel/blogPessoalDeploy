@@ -16,27 +16,29 @@ ul.social-network li{
     padding: 10px;
 }
 
-.fa-facebook-square{
-    transition: scale(1.5);
-}
-
-.fa-facebook-square:hover{
-    transition: 0.2s;
-    transform: scale(1.5);
-    color: #3b5998;
-
+.fa-instagram{
+    transition: 0.7s;
 } 
 
 .fa-instagram:hover{
-    transition: 0.2s;
-    transform: scale(1.5);
-    color: #c13584;
-
+    transform: scale(1.2);
+    opacity: 0.5;
 } 
+
+.fa-linkedin-square{
+    transition: 0.7s;
+}
 
 .fa-linkedin-square:hover{
-    transition: 0.2s;
-    transform: scale(1.5);
-    color: #0072b1;
+    transform: scale(1.2);
+    opacity: 0.5;
+}
 
-} 
+.back{
+    background-color: #1d1d1d;
+}
+
+.copy-back{
+    background-color: #bf1f1d;
+    color: #f1f1f1;
+}
