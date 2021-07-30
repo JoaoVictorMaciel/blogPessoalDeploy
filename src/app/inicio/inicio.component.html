@@ -18,7 +18,7 @@
 
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-            <img src="https://i.imgur.com/ENhUOgt.png" alt="" width="500px" height="500px">
+            <img src="https://i.imgur.com/XqyAHLd.png" alt="" width="900px" height="auto">
         </div>
     </div>
 
@@ -124,38 +124,38 @@
 </div>
 
 
-  <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal fade font-fam" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+        <div class="modal-header back2">
+          <h5 class="modal-title font" id="TituloModalCentralizado">Nova Postagem</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body back">
 
           <div class="form-group">
-              <label for="titulo">Título</label>
-              <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo" placeholder="Digite o título">
+              <label class="font" for="titulo">Título</label>
+              <input [(ngModel)]='postagem.titulo' type="text" class="form-control text-radius" id="titulo" placeholder="Digite o título">
           </div>
 
           <div class="form-group">
-            <label for="texto">Texto</label>
-            <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" row="3"></textarea>
+            <label class="font" for="texto">Texto</label>
+            <textarea [(ngModel)]='postagem.texto' class="form-control text-radius" name="texto" id="texto" row="3"></textarea>
         </div>
 
         <div class="form-group">
-            <label for="tema">Escolha um tema ou <a  data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:</label>
-            <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change)='findByIdTema()'>
+            <label class="font" for="tema">Escolha um tema ou <a class="font2"  data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:</label>
+            <select class="form-control text-radius" name="tema" id="tema" [(ngModel)]='idTema' (change)='findByIdTema()'>
                 <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
             </select>
         </div>
 
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-success" (click)='publicar()'>Publicar</button>
+        <div class="modal-footer back2">
+          <button type="button" class="btn mr-3 btn-config2" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-config" (click)='publicar()'>Publicar</button>
         </div>
       </div>
     </div>

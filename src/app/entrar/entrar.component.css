@@ -1,9 +1,20 @@
 #img-bg{
-    background-image: url('https://i.imgur.com/lO3zywo.jpg');
+    background-image: url('https://i.imgur.com/vWCAIlX.png');
 
     min-height: 695px;
 
-    background-position: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s;
+}
+
+#img-b:hover{
+    background-image: url('https://i.imgur.com/jF9npw7.png');
+
+    min-height: 695px;
+
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
