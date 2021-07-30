@@ -23,14 +23,11 @@
     transition: 0.4s;
 }
 
-.card-config:hover{
-    transform: scale(1.1);
-    z-index: 99;
-    margin-top: 5%;
-    background-color: #bf1f1d;
+.btn-config:hover{
+    
+    border-color: #f1f1f1;
     color: #f1f1f1;
     border-radius: 20px;
-    transition: 0.9s;
 }
 
 .btn-config2{
